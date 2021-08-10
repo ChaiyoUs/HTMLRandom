@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LuaSaPz RanDom Shop !</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
+<style>
+        body {
+                font-family: 'Kanit', sans-serif;
+        }
+</style>
+</head>
+<body>
+    <center><h3>โปรแกรมทาย หัวหรือก้อย By LuaSaPz</h3></center>
+    <center><a href="https://discord.gg/j39vpJpVDA">Join Discord</a></center>
+    <div id="game-list"></div>
+    <script>
+    //By Thanyathep - Discord name : !LuaSaPz
+    //ช่องที่สอนผมเขียน JavaScript ---> BorntoDev <---
+    let round = prompt("คุณต้องการเล่นกี่รอบ ?")
+    for(var i = 0; i < round ; i++){
+    var answer = prompt("คุณต้องการเลือก หัว หรือ ก้อย !")
+    var random_answer = ""
+    if(Math.floor(Math.random() *10) <= 4){
+        random_answer = "หัว"
+    }
+    else{
+        random_answer = "ก้อย"
+    }
+    if(answer == random_answer){
+        alert("คุณตอบถูกยินดีด้วย !")
+    }
+    else{
+        alert("คุณตอบผิดเสียใจด้วย !")
+    }
+}
+    </script>
+</body>
+</html>
